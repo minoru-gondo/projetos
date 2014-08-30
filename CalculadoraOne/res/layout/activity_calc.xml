@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#7CCD7C">
+
+    <TextView
+        android:id="@+id/txtInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/msgInicial"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtValor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtInicial"
+        android:layout_marginTop="20dp"
+        android:text="@string/msgValor1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/campo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtValor2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/campo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtValor1"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtValor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/campo1"
+        android:layout_marginTop="20dp"
+        android:text="@string/msgValor2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtValor1"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/btnSubtrair"
+        android:text="DigitalClock" />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSubtrair"
+        android:layout_alignBottom="@+id/btnSubtrair"
+        android:layout_toRightOf="@+id/campo2"
+        android:onClick="dividir"
+        android:text="@string/msgBotaoDividir" />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtValor2"
+        android:layout_below="@+id/btnSoma"
+        android:layout_marginTop="21dp"
+        android:onClick="multiplicar"
+        android:text="@string/msgBotaoMultiplicar" />
+
+    <Button
+        android:id="@+id/btnSubtrair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMultiplicar"
+        android:layout_toRightOf="@+id/txtValor1"
+        android:onClick="subtrair"
+        android:text="@string/msgBotaoSubtrair" />
+
+    <Button
+        android:id="@+id/btnSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMultiplicar"
+        android:layout_below="@+id/campo2"
+        android:layout_marginTop="43dp"
+        android:onClick="Somar"
+        android:text="@string/msgBotaoSomar" />
+
+    <Button
+        android:id="@+id/btnApagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMultiplicar"
+        android:layout_alignBottom="@+id/btnMultiplicar"
+        android:layout_alignRight="@+id/btnDividir"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/txtInicial"
+        android:text="@string/msgBotaoApagar" />
+
+    <TextView
+        android:id="@+id/campo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnMultiplicar"
+        android:layout_marginTop="34dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

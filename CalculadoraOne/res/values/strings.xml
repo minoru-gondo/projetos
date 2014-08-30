@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Calculadora One</string>
+    <string name="msgInicial">Digite os Valores: </string>
+    <string name="msgValor1">Primeiro Valor: </string>
+    <string name="msgValor2">Segundo Valor: </string>
+    <string name="msgBotaoSomar">Somar</string>
+    <string name="msgBotaoSubtrair">Subtrair</string>
+    <string name="msgBotaoMultiplicar">Multiplicar</string>
+    <string name="msgBotaoDividir">Dividir</string>
+    <string name="msgBotaoApagar">Apagar</string>
+
+</resources>
